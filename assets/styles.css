@@ -1,0 +1,156 @@
+:root {
+    font-size: 16px; 
+    --primary-color: #F5F5F5; /* Based on the desired UI background color */
+    --secondary-color: #333;
+    --spacing-small: 1rem;
+    --spacing-medium: 2rem;
+    --spacing-large: 3rem;
+    --border-color: #ccc;
+    --section-background: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.content-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: var(--spacing-small);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Header */
+
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-small) 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #E9C46A;
+}
+
+.logo {
+    width: 150px;
+}
+
+.transaction-number {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Thank you section */
+
+.thank-you-section {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-medium) 0;
+    background-color: var(--section-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.money-bag {
+    width: 120px;  /* Increased width a bit for emphasis */
+    margin-right: var(--spacing-medium);
+}
+
+.thank-you-message {
+    flex: 1;
+}
+
+.thank-you-message h1 {
+    font-size: 1.8rem; /* Slightly increased for emphasis */
+    margin-top: 0;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: var(--spacing-small);
+}
+
+/* Details section: remitter & Beneficiary details */
+.details-section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    gap: 2rem; /* Spacing between items */
+    padding: 1.5rem 0;   /* Vertical padding for spacing */
+    border-bottom: 1px solid #ccc; /* A line to visually separate this section from the next */
+}
+
+.remitter-details, .beneficiary-details {
+    padding: 1rem;
+    background-color: #f7f7f7; /* Light gray background for distinction */
+}
+
+.details-section h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #333;
+}
+
+.details-section p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;  /* Some spacing between lines */
+}
+
+
+/* Transaction details section */
+.transaction-section {
+    padding: 2rem 0;  /* Vertical padding for spacing */
+}
+
+.transaction-list {
+    /* This will ensure each transaction detail takes full width and titles/values are side-by-side */
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between; /* Pushes titles and values apart */
+    align-items: center;  /* Vertically aligns the content */
+    padding: 0.5rem 0;    /* Adds some vertical spacing between items */
+    border-bottom: 1px solid #ddd;  /* Adds a separating line between items */
+}
+
+.transaction-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.transaction-item span {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+
+footer {
+    padding: 1.5rem 0;    /* Add some padding for spacing */
+    background-color: #f5f5f5; /* A light gray background to differentiate from the main content */
+    border-top: 1px solid #e0e0e0; /* A subtle border at the top of the footer */
+}
+
+.legal-content {
+    font-size: 0.9rem; /* Slightly smaller font size for the legal text */
+    color: #666;       /* A lighter font color */
+    line-height: 1.5;  /* Improved readability with increased line height */
+}
+
+.company-details {
+    margin-top: 1rem;  /* Space between legal content and company details */
+    font-size: 1rem;   /* Standard font size */
+    color: #444;       /* Darker font color for importance */
+}
