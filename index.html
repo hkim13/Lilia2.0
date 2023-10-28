@@ -9,51 +9,105 @@
 <body>
     <main class="content-container">
        
+
+
         <header class="transaction-header">
             <img src="assets/images/LiliaWordLogo.png" alt="Lillia Logo" class="logo">
-            <span class="transaction-number">Transaction Number: A7643018102</span>
+            <p class="transaction-label">Transaction Number: <span class="transaction-number">A7643018102</span></p>
         </header>
 
+
+
         <section class="thank-you-section">
-            <img src="assets/images/LiliaLogo.png" alt="Money Bag Icon" class="money-bag">
             <div class="thank-you-message">
-                <h1>Thanks for sending with Lillia, Patrick Canfield</h1>
-                <p>Your money is on its way to Marion Isabelle Laurent.</p>
-                <p>Total Sent: 164.9 MXN</p>
+                <p>Thanks for sending with Lillia, Patrick Canfield</p>
+            </div>
+        </section>
+
+        <section class="receipt-section">
+            <img src="assets/images/LiliaLogo.png" alt="Money Bag Icon" class="money-bag">
+            <div class="receipt-message">
+                <h2>Your money is on its way to Marion Isabelle Laurent.</h2>
+                <h3>Total Sent: <br/><span class="receipt-amount">164.9 MXN</span></h3>
             </div>
         </section>
 
         <section class="details-section">
-            <!-- Remitter Details -->
-            <div class="remitter-details">
-                <h2>Remitter</h2>
-                <p><strong>Remitter Name:</strong> [CUSTOMER NAME]</p>
-                <p><strong>Remitter Address:</strong> [CUSTOMER ADDRESS]</p>
-            </div>
-        
-            <!-- Beneficiary Details -->
-            <div class="beneficiary-details">
-                <h2>Beneficiary</h2>
-                <p><strong>Beneficiary Name:</strong> [BENEFICIARY NAME]</p>
-                <p><strong>Beneficiary Address:</strong> [BENEFICIARY ADDRESS]</p>
-            </div>
-        </section>
-
-        
-        <section class="transaction-section">
-            <h2>Transaction Details</h2>
-            <div class="transaction-list">
-                <div class="transaction-item">
+            <h2>Remitter</h2>
+            <div class="remitter-list">
+                <div class="remitter-item">
                     <span>Transfer Amount:</span>
                     <span>[AMOUNT SENT USD]</span>
                 </div>
-                <div class="transaction-item">
+                <div class="remitter-item">
                     <span>Transfer Fee:</span>
                     <span>[FEE CHARGED USD]</span>
                 </div>
-                <!-- ... Continue for each transaction detail -->
+            </div>
+        
+            <h2>Beneficiary</h2>
+            <div class="beneficiary-list">
+                <div class="beneficiary-item">
+                    <span>Transfer Amount:</span>
+                    <span>[AMOUNT SENT USD]</span>
+                </div>
+                <div class="beneficiary-item">
+                    <span>Transfer Fee:</span>
+                    <span>[FEE CHARGED USD]</span>
+                </div>
+            </div>
+
+            <h2>Transaction Details</h2>
+            <table>
+                <tr>
+                    <th>Transfer Amount <span class="translation">Cantidad de envío</span></th>
+                    <td class="placeholder-text">[AMOUNT SENT USD]</td>
+                </tr>
+                <tr>
+                    <th>Transfer Fee <span class="translation">Cargo por envío</span></th>
+                    <td class="placeholder-text">[FEE CHARGED USD]</td>
+                </tr>
+                <tr>
+                    <th>Total Paid <span class="translation">Total pagado</span></th>
+                    <td class="placeholder-text">[TOTAL AMOUNT PAID USD]</td>
+                </tr>
+                <tr>
+                    <th>Exchange Rate <span class="translation">Tasa de cambio</span></th>
+                    <td class="placeholder-text">[$1 USD = XXX DOP]</td>
+                </tr>
+                <tr>
+                    <th>Total Sent <span class="translation">Total envíado</span></th>
+                    <td class="placeholder-text">[AMOUNT RECEIVED DOP]</td>
+                </tr>
+                <tr>
+                    <th>Delivery Method <span class="translation">Método de envío</span></th>
+                    <td class="placeholder-text">[PAYOUT METHOD]</td>
+                </tr>
+                <tr>
+                    <th>Payer Name <span class="translation">Nombre del pagador</span></th>
+                    <td class="placeholder-text">[PAYER]</td>
+                </tr>
+                <tr>
+                    <th>Payment Method <span class="translation">Método de pago</span></th>
+                    <td class="placeholder-text">[PAYMENT METHOD]</td>
+                </tr>
+                <tr>
+                    <th>Transaction No. <span class="translation">No. de transacción</span></th>
+                    <td class="placeholder-text">[TRANS #]</td>
+                </tr>
+                <tr>
+                    <th>Transaction Date <span class="translation">Fecha de transacción</span></th>
+                    <td class="placeholder-text">[TRANS DATE & TIME]</td>
+                </tr>
+                <tr>
+                    <th>Expected Available Date <span class="translation">Fecha estimada de disponibilidad</span></th>
+                    <td class="placeholder-text">[RECEIVE DATE]</td>
+                </tr>
+            </table>
             </div>
         </section>
+
+
 
         <footer>
             <div class="legal-content">

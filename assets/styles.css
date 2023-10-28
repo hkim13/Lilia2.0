@@ -2,7 +2,7 @@
     font-size: 16px; 
     --primary-color: #F5F5F5; /* Based on the desired UI background color */
     --secondary-color: #333;
-    --spacing-small: 1rem;
+    --spacing-small: .5rem;
     --spacing-medium: 2rem;
     --spacing-large: 3rem;
     --border-color: #ccc;
@@ -19,13 +19,23 @@ body {
 .content-container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: var(--spacing-small);
+    padding: 0;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+
 
 
 /* Header */
@@ -34,66 +44,152 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-small) 0;
-    border-bottom: 1px solid var(--border-color);
-    background-color: #E9C46A;
+    background-color: #ebb948;
 }
 
 .logo {
-    width: 150px;
+    width: 100px;
+}
+
+.transaction-label {
+    font-size: .7rem;
+    color: white;
+    margin: var(--spacing-small);
 }
 
 .transaction-number {
-    font-size: 1rem;
-    color: var(--secondary-color);
+    font-family: Calibri;
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #e76f31;
+    padding: .2rem 1rem; 
+    background-color: #ffffff;
+    border-radius: 2rem;
+    display: inline-flex;
 }
+
+@media (min-width: 480px) {
+    .details-section {
+        gap: 0.5rem; /* Reduced spacing between items for larger screens */
+        padding: 0.5rem 10rem;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+
+    .transaction-label {
+        font-size: 1rem;
+    }
+
+    .transaction-number {
+        font-size: 2rem; 
+        padding: .2rem 1rem; 
+        border-radius: 2rem;
+    }
+}
+
+
 
 /* Thank you section */
 
 .thank-you-section {
+    background-color: #56b3eb;
     display: flex;
-    align-items: center;
-    padding: var(--spacing-medium) 0;
-    background-color: var(--section-background);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.money-bag {
-    width: 120px;  /* Increased width a bit for emphasis */
-    margin-right: var(--spacing-medium);
+    text-align: center;
+    justify-content: center;
+    height: 18em;
 }
 
 .thank-you-message {
     flex: 1;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
-.thank-you-message h1 {
-    font-size: 1.8rem; /* Slightly increased for emphasis */
-    margin-top: 0;
+
+
+
+.receipt-section {
+    display: flex; /* To align content in a column */
+    flex-direction: column; /* Align the image and receipt message vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center;
+    background-color: #ffffff; /* White background for the box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow for a floating effect */
+    padding: 1.5rem; /* Padding inside the box */
+    margin: -6em auto 2em auto; /* Offset from the thank-you-section and space before details-section */
+    max-width: 60%; /* Optional: Limit the width of the box */
+    border-radius: 5px; /* Rounded corners for the box */
+    position: relative; /* Make position relative to allow child element positioning */
 }
 
-.thank-you-message p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-top: var(--spacing-small);
+.money-bag {
+    width: 200px;
+    position: absolute; /* To position the image offset by 33% from the top */
+    top: 0;
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%) translateY(-6em); /* Adjust the position for precise 33% offset and centering */
 }
+
+
+.receipt-message {
+    display: flex;
+    flex-direction: column; /* Align the message elements vertically */
+    align-self: center; /* Center the message vertically within receipt-section */
+    margin-top: 5em; /* Push the content to start at the center of receipt-section */
+    color: #4c4c4c;
+}
+
+.receipt-amount{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem; 
+    font-weight: thin;
+    color: white;
+    padding: .5rem 3rem; 
+    background-color: #3975e5;
+    border-radius: 2rem;
+    display: inline-flex;
+}
+
+
+@media (min-width: 480px) {
+    .thank-you-message {
+        max-width: 50%;
+    }
+    
+    .receipt-message{
+        max-width: 70%;
+    }
+}
+
+
 
 /* Details section: remitter & Beneficiary details */
 .details-section {
     display: flex;
+    text-align: center;
     flex-direction: column; /* Stack content vertically */
-    gap: 2rem; /* Spacing between items */
+    gap: 1rem; /* Spacing between items */
     padding: 1.5rem 0;   /* Vertical padding for spacing */
     border-bottom: 1px solid #ccc; /* A line to visually separate this section from the next */
 }
 
-.remitter-details, .beneficiary-details {
-    padding: 1rem;
-    background-color: #f7f7f7; /* Light gray background for distinction */
+.remitter-list, .beneficiary-list, .transaction-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.remitter-item, .beneficiary-item, .transaction-item {
+    display: flex;
+    justify-content: space-between; /* Pushes titles and values apart */
+    align-items: center;  /* Vertically aligns the content */
+    padding: 0.5rem 1rem;    /* Adds some vertical spacing between items */
 }
 
 .details-section h2 {
-    font-size: 1.4rem;
     margin-top: 0;
     color: #333;
 }
@@ -105,35 +201,15 @@ img {
 }
 
 
-/* Transaction details section */
-.transaction-section {
-    padding: 2rem 0;  /* Vertical padding for spacing */
-}
-
-.transaction-list {
-    /* This will ensure each transaction detail takes full width and titles/values are side-by-side */
-    display: flex;
-    flex-direction: column;
-}
-
-.transaction-item {
-    display: flex;
-    justify-content: space-between; /* Pushes titles and values apart */
-    align-items: center;  /* Vertically aligns the content */
-    padding: 0.5rem 0;    /* Adds some vertical spacing between items */
-    border-bottom: 1px solid #ddd;  /* Adds a separating line between items */
-}
-
-.transaction-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
 .transaction-item span {
     font-size: 1rem;
     color: #555;
 }
+
+
+
+
+
 
 /* Footer */
 
