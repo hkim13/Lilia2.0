@@ -1,6 +1,6 @@
 :root {
     font-size: 16px; 
-    --primary-color: #F5F5F5; /* Based on the desired UI background color */
+    --primary-color: #F5F5F5;
     --secondary-color: #333;
     --spacing-small: .5rem;
     --spacing-medium: 2rem;
@@ -16,11 +16,12 @@ body {
     background-color: var(--primary-color);
 }
 
+
 .content-container {
     margin: 0 auto;
-    max-width: 1200px;
     padding: 0;
 }
+
 
 img {
     max-width: 100%;
@@ -69,11 +70,6 @@ h3 {
 }
 
 @media (min-width: 480px) {
-    .details-section {
-        gap: 0.5rem; /* Reduced spacing between items for larger screens */
-        padding: 0.5rem 10rem;
-    }
-    
     .logo {
         width: 150px;
     }
@@ -88,6 +84,7 @@ h3 {
         border-radius: 2rem;
     }
 }
+
 
 
 
@@ -113,33 +110,33 @@ h3 {
 
 
 .receipt-section {
-    display: flex; /* To align content in a column */
-    flex-direction: column; /* Align the image and receipt message vertically */
-    align-items: center; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     text-align: center;
-    background-color: #ffffff; /* White background for the box */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow for a floating effect */
-    padding: 1.5rem; /* Padding inside the box */
-    margin: -6em auto 2em auto; /* Offset from the thank-you-section and space before details-section */
-    max-width: 60%; /* Optional: Limit the width of the box */
-    border-radius: 5px; /* Rounded corners for the box */
-    position: relative; /* Make position relative to allow child element positioning */
+    background-color: #ffffff; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    padding: 1.5rem; 
+    margin: -6em auto 2em auto; 
+    max-width: 60%; 
+    border-radius: 5px; 
+    position: relative; 
 }
 
 .money-bag {
     width: 200px;
-    position: absolute; /* To position the image offset by 33% from the top */
+    position: absolute; 
     top: 0;
-    left: 50%; /* Center the image horizontally */
-    transform: translateX(-50%) translateY(-6em); /* Adjust the position for precise 33% offset and centering */
+    left: 50%; 
+    transform: translateX(-50%) translateY(-6em); 
 }
 
 
 .receipt-message {
     display: flex;
-    flex-direction: column; /* Align the message elements vertically */
-    align-self: center; /* Center the message vertically within receipt-section */
-    margin-top: 5em; /* Push the content to start at the center of receipt-section */
+    flex-direction: column; 
+    align-self: center;
+    margin-top: 5em; 
     color: #4c4c4c;
 }
 
@@ -167,16 +164,24 @@ h3 {
 
 
 
-/* Details section: remitter & Beneficiary details */
+
 .details-section {
     display: flex;
     text-align: center;
-    flex-direction: column; /* Stack content vertically */
-    gap: 1rem; /* Spacing between items */
-    padding: 1.5rem 0 5rem;   /* Vertical padding for spacing */
-    border-bottom: 1px solid #ccc; /* A line to visually separate this section from the next */
+    flex-direction: column; 
+    gap: 1rem; 
+    padding: 1.5rem 0 5rem;   
+    border-bottom: 1px solid #ccc; 
+    margin: auto;
+}
+
+@media (min-width: 480px) {
+    .details-section{
+        max-width: 60%;
+    }
     
 }
+
 
 .remitter-list, .beneficiary-list, .transaction-list {
     display: flex;
@@ -186,9 +191,9 @@ h3 {
 
 .remitter-item, .beneficiary-item, .transaction-item {
     display: flex;
-    justify-content: space-between; /* Pushes titles and values apart */
-    align-items: center;  /* Vertically aligns the content */
-    padding: 0.5rem 1rem;    /* Adds some vertical spacing between items */
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 0.5rem 1rem;   
     font-size: .9rem;
     font-weight: bold;
     text-align: left;
@@ -207,13 +212,6 @@ h3 {
 
 .details-section h2 {
     color: #286dc7;
-}
-
-
-@media (min-width: 480px) { 
-    .details-section{
-        padding: 1.5rem 8rem; 
-    }
 }
 
 
@@ -247,7 +245,7 @@ h3 {
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    gap: 4rem;  /* Adjust this value as needed */
+    gap: 4rem;  
 }
 
 
@@ -275,7 +273,7 @@ h3 {
     }
 
     .footer-links {
-        gap: 9rem;  /* Adjust this value as needed */
+        gap: 9rem; 
     }
 }
 
