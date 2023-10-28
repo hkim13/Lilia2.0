@@ -173,13 +173,15 @@ h3 {
     text-align: center;
     flex-direction: column; /* Stack content vertically */
     gap: 1rem; /* Spacing between items */
-    padding: 1.5rem 0;   /* Vertical padding for spacing */
+    padding: 1.5rem 0 5rem;   /* Vertical padding for spacing */
     border-bottom: 1px solid #ccc; /* A line to visually separate this section from the next */
+    
 }
 
 .remitter-list, .beneficiary-list, .transaction-list {
     display: flex;
     flex-direction: column;
+    color: #acaaaa;
 }
 
 .remitter-item, .beneficiary-item, .transaction-item {
@@ -187,46 +189,93 @@ h3 {
     justify-content: space-between; /* Pushes titles and values apart */
     align-items: center;  /* Vertically aligns the content */
     padding: 0.5rem 1rem;    /* Adds some vertical spacing between items */
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: left;
 }
 
-.details-section h2 {
-    margin-top: 0;
+
+.details-item-text span:first-child {
     color: #333;
 }
 
-.details-section p {
-    font-size: 1rem;
-    color: #555;
-    margin: 0.5rem 0;  /* Some spacing between lines */
+.details-item-text span:last-child {
+    font-size: 0.8rem;
+    font-weight: 100;
 }
 
 
-.transaction-item span {
-    font-size: 1rem;
-    color: #555;
+.details-section h2 {
+    color: #286dc7;
+}
+
+
+@media (min-width: 480px) { 
+    .details-section{
+        padding: 1.5rem 8rem; 
+    }
+}
+
+
+.footer {
+    position: relative; 
+    padding: var(--spacing-small); 
+    background-color: white;
+    color: #b2b2b2;
+    font-size: 0.5rem;
+}
+
+.footer-image {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    top: 0%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+}
+
+.footer-logo{
+    width: 100px;
+}
+
+.letter{
+    color: #333;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 4rem;  /* Adjust this value as needed */
 }
 
 
 
-
-
-
-/* Footer */
-
-footer {
-    padding: 1.5rem 0;    /* Add some padding for spacing */
-    background-color: #f5f5f5; /* A light gray background to differentiate from the main content */
-    border-top: 1px solid #e0e0e0; /* A subtle border at the top of the footer */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    padding-top: 50px;
 }
 
-.legal-content {
-    font-size: 0.9rem; /* Slightly smaller font size for the legal text */
-    color: #666;       /* A lighter font color */
-    line-height: 1.5;  /* Improved readability with increased line height */
+.contact-a {
+    text-align: left;
 }
 
-.company-details {
-    margin-top: 1rem;  /* Space between legal content and company details */
-    font-size: 1rem;   /* Standard font size */
-    color: #444;       /* Darker font color for importance */
+.contact-b {
+    text-align: right;
 }
+
+
+@media (min-width: 480px) { 
+    .footer {
+        padding: var(--spacing-medium); 
+        font-size: .8rem;
+    }
+
+    .footer-links {
+        gap: 9rem;  /* Adjust this value as needed */
+    }
+}
+
