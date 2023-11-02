@@ -82,10 +82,10 @@
     }
 
     .transaction-number{
-      font-size: 1rem; 
+      font-size: 1rem;
       font-weight: bold;
       color: #e76f31;
-      padding: .2rem 1rem; 
+      padding: .2rem 1rem;
       background-color: #ffffff;
       border-radius: 2rem;
       display: inline-flex;
@@ -99,23 +99,25 @@
 
     /* receipt section - white */
     /* logo img // found in default styles section */
-    .receipt-section{
-      display: flex;          /* Enables flexbox layout */
-      flex-direction: column; /* Stack children vertically */
-      justify-content: center; /* Center children along the main axis (y-axis in this case) */
-      text-align: center;     /* Center text horizontally */
-      padding: 20px 0;
-      background-color: white;    
+  
+
+    .receipt-card {
+      background-color: #fff;
+      border-radius: 18px;
+      box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.18);
+      padding: 20px;
+      position: relative;
+      top: -57px;
     }
 
     .receipt-message{
       align-self: center;
-      margin-top: 5em; 
+      margin-top: 5em;
     }
 
     .receipt-amount{
       color: white;
-      padding: .5rem 3rem; 
+      padding: .5rem 3rem;
       background-color: #3975e5;
       border-radius: 2rem;
     }
@@ -125,14 +127,14 @@
       background-color: #f5f5f5;
       display: flex;
       text-align: center;
-      flex-direction: column; 
-      gap: 1rem; 
-      padding: 1.5rem 0 5rem;   
-      border-bottom: 1px solid #ccc; 
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem 0 5rem;
+      border-bottom: 1px solid #ccc;
       margin: auto;
     }
 
-    
+
 
     .remitter-list, .beneficiary-list, .transaction-list {
         display: flex;
@@ -142,9 +144,9 @@
 
     .remitter-item, .beneficiary-item, .transaction-item {
       display: flex;
-      justify-content: space-between; 
+      justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 0; 
+      padding: 0.5rem 0;
       font-weight: bold;
       text-align: left;
     }
@@ -165,7 +167,7 @@
 
     /* footer section - white */
     .footer {
-      position: relative; 
+      position: relative;
       color: #b2b2b2;
       font-size: 0.5rem;
     }
@@ -191,7 +193,7 @@
       align-items: center;
       justify-content: center;
       list-style-type: none;
-      gap: 4rem;  
+      gap: 4rem;
     }
 
     .contact-container {
@@ -209,6 +211,7 @@
       text-align: right;
     }
 
+
   </style>
 </head>
 
@@ -222,7 +225,7 @@
   <!-- End of Preview Text -->
 
   <header>
-    <div class="container">
+    <div class="container ">
       <div class="col-2">
         <div class="logo">
           <img src="/images/LiliaWordLogo.png" alt="Lillia Logo">
@@ -240,8 +243,12 @@
     </div>
   </div>
 
-  <div class="receipt-section">
+
+
+  <div class="details-section">
     <div class="container">
+
+      <div class="receipt-card">
       <div class="logo img">
         <img src="/images/LiliaLogo.png" alt="Money Bag Icon">
       </div>
@@ -249,11 +256,8 @@
                 <h2>Your money is on its way to Marion Isabelle Laurent.</h2>
                 <h3>Total Sent: <br/><span class="receipt-amount">164.9 MXN</span></h3>
             </div>
-    </div>
-  </div>
+      </div>
 
-  <div class="details-section">
-    <div class="container">
       <h2>Remitter</h2>
       <div class="remitter-list">
           <div class="remitter-item">
@@ -271,7 +275,7 @@
               <span>[CUSTOMER ADDRESS]</span>
           </div>
       </div>
-  
+
       <h2>Beneficiary</h2>
       <div class="beneficiary-list">
           <div class="beneficiary-item">
@@ -383,31 +387,31 @@
           <img src="/images/LiliaWordLogoBlue.png" alt="Lilia Logo">
         </div>
         <p> FUNDS MAY BE IMMEDIATELY AVAILABLE, depending on Beneficiary's Time Zone, and local operating hours.
-            <br><br>Operating hours and banking system availability permitting. You have a right to dispute errors in your transaction. If you think there is an 
-           error, contact us within 180 days at <span class="letter">866-819-0119 or</span> <a class="letter" href="www.chatbot.com">www.chatbot.com</a>. You can also contact us for a written explanation of your rights. 
+            <br><br>Operating hours and banking system availability permitting. You have a right to dispute errors in your transaction. If you think there is an
+           error, contact us within 180 days at <span class="letter">866-819-0119 or</span> <a class="letter" href="www.chatbot.com">www.chatbot.com</a>. You can also contact us for a written explanation of your rights.
            You can cancel for a full refund within 30 minutes of payment, unless the funds have been picked up or deposited.
-           <br><br>For questions or complaints about <span class="letter">Chatbot Inc. ("Chatbot")</span>, contact: New York State Department of Financial Services: 800-342-3736 
+           <br><br>For questions or complaints about <span class="letter">Chatbot Inc. ("Chatbot")</span>, contact: New York State Department of Financial Services: 800-342-3736
            <a class="letter" href="http://www.dfs.ny.gov">http://www.dfs.ny.gov</a> or Consumer Financial Protection Bureau: 855-411-2372 / 844-729-2372 (TTY/TDD) <a class="letter" href="www.consumerfinance.gov">www.consumerfinance.gov</a>
-           <br><br>NY Liability Statement and Right to Cancel Refund Notice Liability Statement: <span class="letter">Chatbot Inc. ("Chatbot")</span> will be liable to a customer for the 
-           non-delivery or delayed delivery of any money transfer, as described below: 1. The delayed delivery must occur more than 20 days after the 
-           transaction date. 2. The non-delivery or delayed delivery must be caused solely by the gross negligence or intentional act or omission of 
-           either <span class="letter">Chatbot, Chatbot’s</span> selling agent, or <span class="letter">Chatbot’s</span> paying agent. 3. <span class="letter">Chatbot’s</span> will not be liable for any non-delivery or delayed delivery 
-           caused in any way by either: 3.1 Incorrect or incomplete information provided by the customer, or 3.2 The beneficiary's failure to claim the 
-           funds when and where they are available. 4. <span class="letter">Chatbot</span> will not be liable for any indirect, special, incidental, or consequential damages 
-           resulting from the non-delivery or delayed delivery. 5. <span class="letter">Chatbot’s</span> maximum liability for any non-delivery or delayed delivery will be no more 
-           than $100 plus the transaction amount and transaction fees in the U.S. Dollar amount originally paid by the customer to the <span class="letter">UniTeller</span> selling 
+           <br><br>NY Liability Statement and Right to Cancel Refund Notice Liability Statement: <span class="letter">Chatbot Inc. ("Chatbot")</span> will be liable to a customer for the
+           non-delivery or delayed delivery of any money transfer, as described below: 1. The delayed delivery must occur more than 20 days after the
+           transaction date. 2. The non-delivery or delayed delivery must be caused solely by the gross negligence or intentional act or omission of
+           either <span class="letter">Chatbot, Chatbot’s</span> selling agent, or <span class="letter">Chatbot’s</span> paying agent. 3. <span class="letter">Chatbot’s</span> will not be liable for any non-delivery or delayed delivery
+           caused in any way by either: 3.1 Incorrect or incomplete information provided by the customer, or 3.2 The beneficiary's failure to claim the
+           funds when and where they are available. 4. <span class="letter">Chatbot</span> will not be liable for any indirect, special, incidental, or consequential damages
+           resulting from the non-delivery or delayed delivery. 5. <span class="letter">Chatbot’s</span> maximum liability for any non-delivery or delayed delivery will be no more
+           than $100 plus the transaction amount and transaction fees in the U.S. Dollar amount originally paid by the customer to the <span class="letter">UniTeller</span> selling
            agent.
-           <br><br>RIGHT CANCEL AND REFUND NOTICE: A customer may cancel a money transfer and receive a refund as described below: 1) A customer 
-           may cancel a money transfer by completing and signing a Stop Payment Request form. 2) <span class="letter">Chatbot</span> will not stop payment on the money 
-           transfer until: 2.1) <span class="letter">Chatbot</span> receives the Stop Payment Request at its operations center at <span class="letter">580 Sylvan Ave, Ste. M-J, Englewood Cliffs, NJ 07632</span> before payment is made and 2.2) <span class="letter">Chatbot</span> has sufficient time to process the request and prevent payment to the beneficiary in the 
-           payment country. 3) If the money transfer is stopped, <span class="letter">Chatbot</span> will pay the refund as described below: 3.1) <span class="letter">Chatbot</span> will issue a check 
-           payable to the customer in the money transfer transaction amount, which will be converted to U.S. dollars at the currency exchange rate in 
-           effect on the date the check is issued. 3.2) <span class="letter">Chatbot</span> will send the check to the customer's address shown in Stop Payment Request form or in 
-           <span class="letter">Chatbot</span> transaction records. 3.3) The refund check will be issued no later than twenty (20) business days after <span class="letter">Chatbot</span> receipt of the Stop 
+           <br><br>RIGHT CANCEL AND REFUND NOTICE: A customer may cancel a money transfer and receive a refund as described below: 1) A customer
+           may cancel a money transfer by completing and signing a Stop Payment Request form. 2) <span class="letter">Chatbot</span> will not stop payment on the money
+           transfer until: 2.1) <span class="letter">Chatbot</span> receives the Stop Payment Request at its operations center at <span class="letter">580 Sylvan Ave, Ste. M-J, Englewood Cliffs, NJ 07632</span> before payment is made and 2.2) <span class="letter">Chatbot</span> has sufficient time to process the request and prevent payment to the beneficiary in the
+           payment country. 3) If the money transfer is stopped, <span class="letter">Chatbot</span> will pay the refund as described below: 3.1) <span class="letter">Chatbot</span> will issue a check
+           payable to the customer in the money transfer transaction amount, which will be converted to U.S. dollars at the currency exchange rate in
+           effect on the date the check is issued. 3.2) <span class="letter">Chatbot</span> will send the check to the customer's address shown in Stop Payment Request form or in
+           <span class="letter">Chatbot</span> transaction records. 3.3) The refund check will be issued no later than twenty (20) business days after <span class="letter">Chatbot</span> receipt of the Stop
            Payment request.
-           <br><br><span class="letter">UNITELLER</span> is licensed and regulated by the New York State Banking Department located at 1 State St., New York, New York 10004 and 
+           <br><br><span class="letter">UNITELLER</span> is licensed and regulated by the New York State Banking Department located at 1 State St., New York, New York 10004 and
            unresolved consumer complaints may be mailed to the New York State Banking Department, Consumer Services Division at that address.</p>
-    
+
     <hr>
     <div>
         <div class="footer-links">
