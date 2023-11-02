@@ -70,6 +70,76 @@
     footer {
       background-color: #fff;
     }
+    /* End of default styles */
+
+    /* Start of custom styles */
+
+    /* header section - orange */
+    /* logo, col-2, ticket-n // found in default styles section */
+    .transaction-label{
+      color: white;
+      margin: 0;
+    }
+
+    .transaction-number{
+      font-size: 1rem; 
+      font-weight: bold;
+      color: #e76f31;
+      padding: .2rem 1rem; 
+      background-color: #ffffff;
+      border-radius: 2rem;
+      display: inline-flex;
+    }
+
+    /* thank you section - blue */
+    .thank-you-section{
+      text-align: center;
+      color: white;
+    }
+
+    /* receipt section - white */
+    /* logo img // found in default styles section */
+    .receipt-section{
+      display: flex;          /* Enables flexbox layout */
+      flex-direction: column; /* Stack children vertically */
+      justify-content: center; /* Center children along the main axis (y-axis in this case) */
+      text-align: center;     /* Center text horizontally */
+      padding: 20px 0;
+      background-color: white;    
+    }
+
+    .receipt-message{
+      align-self: center;
+    margin-top: 5em; 
+    }
+
+    .receipt-amount{
+      color: white;
+      padding: .5rem 3rem; 
+      background-color: #3975e5;
+      border-radius: 2rem;
+    }
+
+    /* details section - grey */
+    .details-section{
+      background-color: #f5f5f5;
+    }
+
+    .remitter-list, .beneficiary-list, .transaction-list{
+
+    }
+
+    .remitter-item, .beneficiary-item, .transaction-item{
+
+    }
+
+    .details-item-text{
+
+    }
+
+    /* footer section - white */
+    
+
   </style>
 </head>
 
@@ -103,7 +173,9 @@
 
   <div class="receipt-section">
     <div class="container">
-      <img src="/images/LiliaLogo.png" alt="Money Bag Icon" class="money-bag">
+      <div class="logo img">
+        <img src="/images/LiliaLogo.png" alt="Money Bag Icon">
+      </div>
             <div class="receipt-message">
                 <h2>Your money is on its way to Marion Isabelle Laurent.</h2>
                 <h3>Total Sent: <br/><span class="receipt-amount">164.9 MXN</span></h3>
