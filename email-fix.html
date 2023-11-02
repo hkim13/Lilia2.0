@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <title>Your Email Subject</title>
+  <style>
+    /* Reset some default styles for better email rendering */
+    body,
+    div,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Lato, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    header {
+      background-color: #ebb948;
+    }
+
+    .col-2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .logo {
+      flex: 1;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .ticket-n {
+      flex: 1;
+      text-align: right;
+    }
+
+    .thank-you-section {
+      background-color: #56b3eb;
+    }
+
+    footer {
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preview Text (This is the preview text that appear for the user before opening the email)-->
+  <div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    Sua oferta mensal para dias mais curtos e noites mais longas
+    &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+  </div>
+  <!-- End of Preview Text -->
+
+  <header>
+    <div class="container">
+      <div class="col-2">
+        <div class="logo">
+          <img src="/images/LiliaWordLogo.png" alt="Lillia Logo">
+        </div>
+        <div class="ticket-n">
+          <p class="transaction-label">Transaction Number: <span class="transaction-number">A7643018102</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="thank-you-section">
+    <div class="container">
+      <h2>Thanks for sending with Lillia, Patrick Canfield</h2>
+    </div>
+  </div>
+
+  <div class="receipt-section">
+    <div class="container">
+      <img src="/images/LiliaLogo.png" alt="Money Bag Icon" class="money-bag">
+            <div class="receipt-message">
+                <h2>Your money is on its way to Marion Isabelle Laurent.</h2>
+                <h3>Total Sent: <br/><span class="receipt-amount">164.9 MXN</span></h3>
+            </div>
+    </div>
+  </div>
+
+  <div class="details-section">
+    <div class="container">
+      <h2>Remitter</h2>
+      <div class="remitter-list">
+          <div class="remitter-item">
+              <div class="details-item-text">
+                  <span>Remitter Name</span><br/>
+                  <span>Nombre del remitente</span>
+              </div>
+              <span>[CUSTOMER NAME]</span>
+          </div>
+          <div class="remitter-item">
+              <div class="details-item-text">
+                  <span>Remitter Address</span><br/>
+                  <span>Dirección del remitente</span>
+              </div>
+              <span>[CUSTOMER ADDRESS]</span>
+          </div>
+      </div>
+  
+      <h2>Beneficiary</h2>
+      <div class="beneficiary-list">
+          <div class="beneficiary-item">
+              <div class="details-item-text">
+                  <span>Beneficiary Name</span><br/>
+                  <span>Nombre del beneficiario</span>
+              </div>
+              <span>[BENEFICIARY NAME]</span>
+          </div>
+          <div class="beneficiary-item">
+              <div class="details-item-text">
+                  <span>Beneficiary Address</span><br/>
+                  <span>Dirección del beneficiario</span>
+              </div>
+              <span>[BENEFICIARY ADDRESS]</span>
+          </div>
+      </div>
+
+      <h2>Transaction Details</h2>
+      <div class="transaction-list">
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Transfer Amount</span><br/>
+                  <span>Cantidad de envío</span>
+              </div>
+              <span>[AMOUNT SENT USD]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Transfer Fee</span><br/>
+                  <span>Cargo por envío</span>
+              </div>
+              <span>[FEE CHARGED USD]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Total Paid</span><br/>
+                  <span>Total pagado</span>
+              </div>
+              <span>[TOTAL AMOUNT PAID USD]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Exchange Rate</span><br/>
+                  <span>Tasa de cambio</span>
+              </div>
+              <span>[$1 USD = XXX DOP]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Total Sent</span><br/>
+                  <span>Total envíado</span>
+              </div>
+              <span>[AMOUNT RECEIVED DOP]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Delivery Method</span><br/>
+                  <span>Método de envío</span>
+              </div>
+              <span>[PAYOUT METHOD]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Payer Name</span><br/>
+                  <span>Nombre del pagador</span>
+              </div>
+              <span>[PAYER]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Payment Method</span><br/>
+                  <span>Método de pago</span>
+              </div>
+              <span>[PAYMENT METHOD]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Transaction No.</span><br/>
+                  <span>No. de transacción</span>
+              </div>
+              <span>[TRANS #]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Transaction Date</span><br/>
+                  <span>Fecha de transacción</span>
+              </div>
+              <span>[TRANS DATE & TIME]</span>
+          </div>
+          <div class="transaction-item">
+              <div class="details-item-text">
+                  <span>Expected Available Date</span><br/>
+                  <span>Fecha estimada de disponibilidad</span>
+              </div>
+              <span>[RECEIVE DATE]</span>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-logo-img">
+          <img src="/images/LiliaFace.png" alt="Lilia Mascot">
+        </div>
+        <div class="footer-logo">
+          <img src="/images/LiliaWordLogoBlue.png" alt="Lilia Logo">
+        </div>
+        <p> FUNDS MAY BE IMMEDIATELY AVAILABLE, depending on Beneficiary's Time Zone, and local operating hours.
+            <br><br>Operating hours and banking system availability permitting. You have a right to dispute errors in your transaction. If you think there is an 
+           error, contact us within 180 days at <span class="letter">866-819-0119 or</span> <a class="letter" href="www.chatbot.com">www.chatbot.com</a>. You can also contact us for a written explanation of your rights. 
+           You can cancel for a full refund within 30 minutes of payment, unless the funds have been picked up or deposited.
+           <br><br>For questions or complaints about <span class="letter">Chatbot Inc. ("Chatbot")</span>, contact: New York State Department of Financial Services: 800-342-3736 
+           <a class="letter" href="http://www.dfs.ny.gov">http://www.dfs.ny.gov</a> or Consumer Financial Protection Bureau: 855-411-2372 / 844-729-2372 (TTY/TDD) <a class="letter" href="www.consumerfinance.gov">www.consumerfinance.gov</a>
+           <br><br>NY Liability Statement and Right to Cancel Refund Notice Liability Statement: <span class="letter">Chatbot Inc. ("Chatbot")</span> will be liable to a customer for the 
+           non-delivery or delayed delivery of any money transfer, as described below: 1. The delayed delivery must occur more than 20 days after the 
+           transaction date. 2. The non-delivery or delayed delivery must be caused solely by the gross negligence or intentional act or omission of 
+           either <span class="letter">Chatbot, Chatbot’s</span> selling agent, or <span class="letter">Chatbot’s</span> paying agent. 3. <span class="letter">Chatbot’s</span> will not be liable for any non-delivery or delayed delivery 
+           caused in any way by either: 3.1 Incorrect or incomplete information provided by the customer, or 3.2 The beneficiary's failure to claim the 
+           funds when and where they are available. 4. <span class="letter">Chatbot</span> will not be liable for any indirect, special, incidental, or consequential damages 
+           resulting from the non-delivery or delayed delivery. 5. <span class="letter">Chatbot’s</span> maximum liability for any non-delivery or delayed delivery will be no more 
+           than $100 plus the transaction amount and transaction fees in the U.S. Dollar amount originally paid by the customer to the <span class="letter">UniTeller</span> selling 
+           agent.
+           <br><br>RIGHT CANCEL AND REFUND NOTICE: A customer may cancel a money transfer and receive a refund as described below: 1) A customer 
+           may cancel a money transfer by completing and signing a Stop Payment Request form. 2) <span class="letter">Chatbot</span> will not stop payment on the money 
+           transfer until: 2.1) <span class="letter">Chatbot</span> receives the Stop Payment Request at its operations center at <span class="letter">580 Sylvan Ave, Ste. M-J, Englewood Cliffs, NJ 07632</span> before payment is made and 2.2) <span class="letter">Chatbot</span> has sufficient time to process the request and prevent payment to the beneficiary in the 
+           payment country. 3) If the money transfer is stopped, <span class="letter">Chatbot</span> will pay the refund as described below: 3.1) <span class="letter">Chatbot</span> will issue a check 
+           payable to the customer in the money transfer transaction amount, which will be converted to U.S. dollars at the currency exchange rate in 
+           effect on the date the check is issued. 3.2) <span class="letter">Chatbot</span> will send the check to the customer's address shown in Stop Payment Request form or in 
+           <span class="letter">Chatbot</span> transaction records. 3.3) The refund check will be issued no later than twenty (20) business days after <span class="letter">Chatbot</span> receipt of the Stop 
+           Payment request.
+           <br><br><span class="letter">UNITELLER</span> is licensed and regulated by the New York State Banking Department located at 1 State St., New York, New York 10004 and 
+           unresolved consumer complaints may be mailed to the New York State Banking Department, Consumer Services Division at that address.</p>
+    
+    <hr>
+    <div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Powered by UniTeller</a>
+            <a href="#">Terms of Use</a>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-a">
+                Servicio UniTeller, Inc.<br>
+                218 Route 17 North<br>
+                Rochelle Park, NJ 07662<br>
+                Tel: 1.800.456.3492<br>
+                Fax: 1.866.235.3279
+            </div>
+            <div class="contact-b">
+                Powered by UniTeller<br>
+                580 Sylvan Ave., Ste. M-J<br>
+                Englewood Cliffs, NJ 07632<br>
+                Tel: 1.866-819-0119
+            </div>
+        </div>
+
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
