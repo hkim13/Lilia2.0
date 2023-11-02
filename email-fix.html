@@ -53,9 +53,14 @@
       flex: 1;
     }
 
-    .logo img {
+    .logo-img img {
       max-width: 100%;
       height: auto;
+
+      position: absolute; 
+      top: 0;
+      left: 50%; 
+      transform: translateX(-50%) translateY(-7em); 
     }
 
     .ticket-n {
@@ -95,32 +100,15 @@
     .thank-you-section{
       text-align: center;
       color: white;
+      padding: 0 20px;
     }
 
-    /* receipt section - white */
-    /* logo img // found in default styles section */
-  
-
-    .receipt-card {
-      background-color: #fff;
-      border-radius: 18px;
-      box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.18);
-      padding: 20px;
-      position: relative;
-      top: -57px;
+    .container-thank-you{
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 20px 170px 0;
     }
 
-    .receipt-message{
-      align-self: center;
-      margin-top: 5em;
-    }
-
-    .receipt-amount{
-      color: white;
-      padding: .5rem 3rem;
-      background-color: #3975e5;
-      border-radius: 2rem;
-    }
 
     /* details section - grey */
     .details-section{
@@ -133,13 +121,44 @@
       border-bottom: 1px solid #ccc;
       margin: auto;
     }
+    /* receipt section - white */
+    /* logo img // found in default styles section */
+    .receipt-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.18);
+      padding: 20px;
+      position: relative;
+      top: -120px;
+    }
 
 
+    .receipt-message{
+      align-self: center;
+      margin-top: 7em;
+    }
+
+    .receipt-message h2 {
+      margin-bottom: 2em;
+      color: #555 !important;
+    }
+
+    .receipt-amount{
+      color: white;
+      padding: .5rem 0;
+      max-width: 15rem;
+      background-color: #3975e5;
+      border-radius: 2rem;
+      margin: auto; 
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center; 
+    }
 
     .remitter-list, .beneficiary-list, .transaction-list {
-        display: flex;
-        flex-direction: column;
-        color: #acaaaa;
+      display: flex;
+      flex-direction: column;
+      color: #acaaaa;
     }
 
     .remitter-item, .beneficiary-item, .transaction-item {
@@ -211,6 +230,15 @@
       text-align: right;
     }
 
+    @media (min-width: 480px) { 
+    .footer {
+        font-size: .8rem;
+    }
+
+    .footer-links {
+        gap: 9rem; 
+    }
+}
 
   </style>
 </head>
@@ -225,7 +253,7 @@
   <!-- End of Preview Text -->
 
   <header>
-    <div class="container ">
+    <div class="container">
       <div class="col-2">
         <div class="logo">
           <img src="/images/LiliaWordLogo.png" alt="Lillia Logo">
@@ -238,7 +266,7 @@
   </header>
 
   <div class="thank-you-section">
-    <div class="container">
+    <div class="container-thank-you">
       <h2>Thanks for sending with Lillia, Patrick Canfield</h2>
     </div>
   </div>
@@ -249,12 +277,13 @@
     <div class="container">
 
       <div class="receipt-card">
-      <div class="logo img">
+      <div class="logo-img">
         <img src="/images/LiliaLogo.png" alt="Money Bag Icon">
       </div>
             <div class="receipt-message">
                 <h2>Your money is on its way to Marion Isabelle Laurent.</h2>
-                <h3>Total Sent: <br/><span class="receipt-amount">164.9 MXN</span></h3>
+                <h3 class="text">Total Sent:</h3>
+                <div class="receipt-amount">164.9 MXN</div>
             </div>
       </div>
 
